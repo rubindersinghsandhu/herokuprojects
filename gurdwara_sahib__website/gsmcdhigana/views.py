@@ -64,6 +64,7 @@ def postdata(request):
                 dummy=expense(user=instance.creater,spent=0,deposited=0)
                 dummy.add_expense( instance.type, instance.amount)
                 dummy.save()
+            return redirect('home')
         else:
             print("form not valid")
         data = {
