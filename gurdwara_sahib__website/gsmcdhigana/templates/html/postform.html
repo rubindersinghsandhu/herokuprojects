@@ -1,0 +1,49 @@
+{% extends "html/base.html"%}
+{%block title%}Post Form{% endblock %}
+{% load static %}
+{% block files %}
+<link rel="stylesheet" type="text/css" href="{% static '/stylepost.css'%}">
+{% endblock %}
+{%block content%}
+{% load crispy_forms_tags %}
+<div class="row">
+    <div class="col-lg-6 col-md-6"></div>
+    <div id="right" col="col-lg-6 col-md-6 my-5 ">
+        <form method="post" action="." enctype="multipart/form-data">
+            {%csrf_token%}
+            <div id="error">
+                {% for error in form.errors%}
+                    <p>Entry with same {{error}} exists.</p>
+                {% endfor%}
+            </div>
+            <div id="inputfield">
+                <label for="heading">Heading</label>
+                <div id="heading">{{form.heading}}</div>
+            </div>
+            <div id="inputfield" >
+                <label for="content">Description</label>
+                <div id="content" >{{form.content}}</div>
+            </div>
+            <div id="inputfield" >
+                <label for="bill">Bill Image</label>
+                <div id="bill">{{form.billimage}}</div>
+            </div>
+            <div id="inputfield" >
+                <label for="amount">Amount</label>
+                <div id="amount">{{form.amount}}</div>
+            </div>
+            <div id="inputfield" >
+                <label for="type">Amount Type</label>
+                <div id="type" >{{form.type}}</div>
+            </div>
+            <div id="inputfield" hidden>
+                <label for="creater">Creater</label>
+                <div id="creater" value="{{request.user}}">{{form.creater}}</div>
+            </div>
+
+
+            <button type="submit" class=" btn btn-primary">Submit</button>
+        </form>
+   </div>
+</div>
+{% endblock %}

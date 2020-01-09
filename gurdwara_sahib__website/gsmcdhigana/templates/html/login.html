@@ -1,0 +1,26 @@
+{% extends 'html/base.html'%}
+{% block title %}Login Page{% endblock %}
+{% load static %}
+{% block files %}
+<link rel="stylesheet" type="text/css" href="{% static '/style.css'%}">
+{% endblock %}
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="box">
+		<h2 >Login</h2>
+			<form id="loginform" method="post">
+				{%csrf_token%}
+				<div class="inputBox">
+					<input type="text" name="username" required="">
+					<label>Username</label>
+				</div>
+				<div class="inputBox">
+					<input type="password" name="password" required="">
+					<label>Password</label>
+				</div>
+				<div >
+				  <button type="submit"  >Submit</button>
+				</div>
+			</form>
+</div>
+{% endblock %}

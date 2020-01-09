@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: initial !important;
+    font-family: 'Quicksand';
+}
+#heading{
+    width:100%;
+}
+#display h1{
+    color:#020203;
+    text-align: center;
+    background:url('bg-12.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    padding:25% 5% 0 5%;
+
+}
+#display .card-body{
+    color:#c69d26;
+    border:1px solid #000000;
+    box-shadow:5px 10px 5px #9b7717;
+}
+
+
+#post{
+    border:1px solid;
+    margin:5%;
+    box-shadow: 10px 15px 20px #000000;
+    display: block;
+    font-size:25px;
+}
+#data h1{
+    padding:0 0 5% 0;
+}
+
+
+#data{
+    text-align: center;
+    padding-top:7%;
+}
+#para{
+    margin:5%;
+}
+.post-image{
+    height:100%;
+    width:100%;
+    padding:5%;
+}
+#link{
+    z-index:1;
+    background:#6b5d2a;
+    font-size:30px;
+    margin:5% 0;
+    box-shadow: 10px 15px 20px #000000;
+}
+
+#link a{
+    color: white;
+    text-align:center;
+    text-decoration:none;
+    margin:0 31%;
+}
+#link1{
+    z-index:1;
+    background:#6b5d2a;
+    font-size:30px;
+    margin:5% 30%;
+    box-shadow: 10px 15px 20px #000000;
+}
+#link1 a{
+    color: white;
+    text-align:center;
+    text-decoration:none;
+    margin:0 45%;
+}

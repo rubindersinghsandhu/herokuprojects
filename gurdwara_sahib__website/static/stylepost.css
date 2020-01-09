@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    padding:0;
+    background:url('bg-13.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+#error{
+    font-size: 25px;
+    font-weight:800;
+}
+#inputfield label{
+    font-size: 35px;
+    font-weight:500;
+    color:##3d453c;
+}
+
+#inputfield input,
+#inputfield textarea
+{
+    width:100%;
+    font-size:16px;
+    color:#000000;
+    margin-bottom:30px;
+    opacity: 0.6;
+    border:1px solid #fff;
+    outline:none;
+    background: #38748e;
+}
+#inputfield select{
+    width:100%;
+    font-size:25px;
+    color:#000000;
+    margin-bottom:30px;
+    opacity: 0.6;
+    outline:none;
+    background: #38748e;
+}
