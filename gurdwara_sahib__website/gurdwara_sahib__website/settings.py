@@ -124,5 +124,12 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#STATICFILES_DIRS = [ os.path.join(BASE_DIR, "static"),]
+STATICFILES_DIRS = [ 
+    os.path.join(BASE_DIR, "static"),
+]
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR,  'templates'),
+    # Add to this list all the locations containing your static files 
+)
 django_heroku.settings(locals())
