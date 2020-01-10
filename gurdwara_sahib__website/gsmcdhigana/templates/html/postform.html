@@ -7,8 +7,8 @@
 {%block content%}
 {% load crispy_forms_tags %}
 <div class="row">
-    <div class="col-lg-6 col-md-6"></div>
-    <div id="right" col="col-lg-6 col-md-6 my-5 ">
+    <div id="left" class="col-md-6 "></div>
+    <div id="right" class="col-md-6  my-5 ">
         <form method="post" action="." enctype="multipart/form-data">
             {%csrf_token%}
             <div id="error">
