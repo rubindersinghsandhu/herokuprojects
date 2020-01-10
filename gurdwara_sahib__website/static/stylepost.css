@@ -12,6 +12,13 @@ body{
     font-size: 25px;
     font-weight:800;
 }
+#right{
+    padding: 0 5% 0 10%;
+    width:50%:
+}
+#left{
+        width:50%;
+    }
 #inputfield label{
     font-size: 35px;
     font-weight:500;
@@ -19,9 +26,10 @@ body{
 }
 
 #inputfield input,
-#inputfield textarea
+#inputfield textarea,
+#inputfield select
 {
-    width:100%;
+    width:60%;
     font-size:16px;
     color:#000000;
     margin-bottom:30px;
@@ -30,12 +38,26 @@ body{
     outline:none;
     background: #38748e;
 }
-#inputfield select{
-    width:100%;
-    font-size:25px;
-    color:#000000;
-    margin-bottom:30px;
-    opacity: 0.6;
-    outline:none;
-    background: #38748e;
+
+@media(max-width:800px){
+    #right{
+    padding: 0 10% 0 15%;
+    width:90%;
+    }
+    #left{
+        width:3%;
+    }
+    #inputfield input,
+    #inputfield textarea,
+    #inputfield select
+    {
+        width:95%;
+        font-size:16px;
+        color:#000000;
+        margin-bottom:30px;
+        opacity: 0.6;
+        border:1px solid #fff;
+        outline:none;
+        background: #38748e;
+    }
 }
