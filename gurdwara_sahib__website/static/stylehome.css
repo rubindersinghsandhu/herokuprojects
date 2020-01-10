@@ -51,26 +51,28 @@ body{
     z-index:1;
     background:#6b5d2a;
     font-size:30px;
-    margin:5% 0;
+    margin:5% 8%;
     box-shadow: 10px 15px 20px #000000;
 }
 
 #link a{
+    display: block;
     color: white;
     text-align:center;
     text-decoration:none;
-    margin:0 31%;
+    width:50%;
+    margin:5% auto;
 }
 #link1{
     z-index:1;
     background:#6b5d2a;
     font-size:30px;
-    margin:5% 30%;
+    margin:5% 20%;
     box-shadow: 10px 15px 20px #000000;
 }
 #link1 a{
     color: white;
     text-align:center;
     text-decoration:none;
-    margin:0 45%;
+    margin:0 auto;
 }
