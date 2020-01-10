@@ -122,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 
-if not DEBUG:
+if DEBUG:
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static/rfiles')
     MEDIA_URL = '/media/'
